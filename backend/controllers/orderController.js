@@ -112,7 +112,7 @@ const placeOrderCOD = async (req, res) => {
 };
 ////////////////
 const verifyOrder = async(req, res) => {
-    const {orderId, success} = req.body;
+    const {orderId, success} = req.query;
     try {
         if(success === "true" || success === true) {
             await orderModel.findByIdAndUpdate(orderId, { payment: true });

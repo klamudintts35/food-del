@@ -9,7 +9,7 @@ const stripe = new Stripe(process.env.STRIPE_SECRET_KEY);
 
 const placeOrder = async (req, res)=> {
     // URL of frontend
-    const frontend_URL = "http://localhost:5173";
+    const frontend_URL = "https://food-del-frontend-c1xl.onrender.com/";
 
     try{
         const totalAmount = Number(req.body.amount); // ensure it's a number

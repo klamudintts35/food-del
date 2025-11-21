@@ -98,6 +98,7 @@ const PlaceOrder = () => {
       navigate("/cart");
     }
     else if(getTotalCartAmount() === 0) {
+      alert("Amount not 0");/// agai amount 0 rahega tab
       navigate("/cart"); ///// ye kam nhi kar raha hai kl ese solve karna hai 
     }
   },[token])

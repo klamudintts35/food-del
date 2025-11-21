@@ -94,6 +94,7 @@ const PlaceOrder = () => {
   
   useEffect(()=> {
     if(!token) {
+      alert("before login user after order product");//// ye line agar user login nhi hai to order nhi hoga
       navigate("/cart");
     }
     else if(getTotalCartAmount() === 0) {

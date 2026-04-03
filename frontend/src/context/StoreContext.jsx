@@ -6,7 +6,7 @@ export const StoreContext = createContext(null);
 const StoreContextProvider = (props) => {
     /// ye card me + jo icone hai use karne ke liye incrige and decrige
     const [cartItems, setCartItems]= useState({});
-    const bestURL = "https://food-del-backend-58xj.onrender.com";
+    const bestURL = "http://localhost:4000";
     const [token, setToken] = useState("");
     const [food_list, setFood_list] = useState([]);
     const addToCart = async(itemId)=> {

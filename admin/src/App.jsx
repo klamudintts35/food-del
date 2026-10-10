@@ -9,7 +9,8 @@ import { ToastContainer } from 'react-toastify';
 import Edit from './pages/Edit/Edit'
 
 const App = () => {
-  const bestURL = 'https://food-del-backend-58xj.onrender.com';
+  const bestURL = 'https://food-del-8rny.onrender.com/';
+  // const bestURL = 'https://food-del-backend-58xj.onrender.com';
   return (
     <div>
       <ToastContainer />
